@@ -1,6 +1,6 @@
-<%- include('./partials/header') %>
+<%- include('../partials/header') %>
 <ul>
-    <% skills.forEach(functinon(s){ %>
+    <% skills.forEach(function(s){ %>
         <li>
             <a href="/skills/<%= s.id %>"><%= s.skill %></a>
             - 
@@ -8,4 +8,4 @@
         </li>
     <% }); %>
 </ul>
-<%- include('./partials/footer') %>
+<%- include('../partials/footer') %>
