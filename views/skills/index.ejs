@@ -1,0 +1,11 @@
+<%- include('./partials/header') %>
+<ul>
+    <% skills.forEach(functinon(s){ %>
+        <li>
+            <a href="/skills/<%= s.id %>"><%= s.skill %></a>
+            - 
+          <%= s.done ? 'Learned' : 'Needs Time' %>
+        </li>
+    <% }); %>
+</ul>
+<%- include('./partials/footer') %>
