@@ -25,6 +25,7 @@ function index(req, res) {
     res.render('skills/new', {title: 'Add New SKill'})
   }
 
-  function create(){
+  function create(req, res){
     Skill.create(req.body)
+    res.redirect('/skills')
   }
