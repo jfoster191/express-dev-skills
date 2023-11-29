@@ -3,7 +3,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
+a:hover {
   color: #00B7FF;
 }
 
@@ -25,6 +25,12 @@ h1 {
   display: flex;
   justify-content: center;
   font-size: 7vmin;
+}
+
+#home-message{
+  display: flex;
+  justify-content: center;
+  font-size: 4vmin;
 }
 
 li {
