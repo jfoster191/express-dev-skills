@@ -42,3 +42,16 @@ li {
   margin-top: 3vmin;
   font-size: 2.5vmin;
 }
+
+#edit {
+  background-color: #EFEFEF;
+  color: black;
+  border: solid 0.22vmin #767676;
+  border-radius: 10%;
+  padding: 0.5vmin 2vmin 0.5vmin 2vmin;
+  text-decoration: none;
+}
+
+#edit:hover {
+  background-color: #bababa75;
+}

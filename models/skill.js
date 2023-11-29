@@ -10,7 +10,8 @@ const skills = [
     getAll,
     getOne,
     create,
-    deleteOne
+    deleteOne,
+    update
   };
 	
   function getAll() {
@@ -30,6 +31,12 @@ const skills = [
 
   function deleteOne(id){
     id = parseInt(id);
-    const idx = skills.findIndex(skill => skill.id === id)
-    skills.splice(idx, 1)
+    const idx = skills.findIndex(skill => skill.id === id);
+    skills.splice(idx, 1);
+  }
+
+  function update(id, updatedSkill){
+    id = parseInt(id);
+    const skill = getOne(id);
+    skill.skill = updatedSkill.skill;
   }
