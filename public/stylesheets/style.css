@@ -39,19 +39,28 @@ li {
 }
 
 #add-new {
+  display: flex;
   margin-top: 3vmin;
   font-size: 2.5vmin;
+  background-color: #EFEFEF;
+  color: black;
+  border: solid 0.22vmin #767676;
+  border-radius: 0.5vmin;
+  padding: 0.5vmin 2vmin 0.5vmin 2vmin;
+  text-decoration: none;
+  width: 15vmin;
+  text-wrap: nowrap;
 }
 
 #edit {
   background-color: #EFEFEF;
   color: black;
   border: solid 0.22vmin #767676;
-  border-radius: 10%;
+  border-radius: 0.5vmin;
   padding: 0.5vmin 2vmin 0.5vmin 2vmin;
   text-decoration: none;
 }
 
-#edit:hover {
+#edit:hover, #add-new:hover {
   background-color: #bababa75;
 }
